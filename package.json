@@ -4,7 +4,12 @@
   "description": "challenge automation",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "npx wdio run ./wdio.conf.js --spec google-automation.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   },
   "repository": {
     "type": "git",
